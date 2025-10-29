@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main(void) {
-    double n, sum; // 建议将 'sun' 改为 'sum'
+    double n, sum; 
     
     printf("数字n为：");
     // 注意：计算 1 到 n 的和，通常 n 是一个整数。
