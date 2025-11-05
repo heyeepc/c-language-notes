@@ -3,7 +3,7 @@ int main(void) {
 
     const float PI = 3.14159;
     float r,perimeter,area;
-    printf("Enter angle: ");
+    printf("请输入圆的半径(radius): ");
     scanf("%f", &r);
 
     perimeter = 2 * r * PI;
