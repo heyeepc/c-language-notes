@@ -10,3 +10,35 @@
 从键盘输入当月利润I，求应发放奖金总数？
 */
 
+#include <stdio.h>
+
+int main() {
+
+    double i;
+    scanf("%lf", &i);
+
+    double bonus;
+
+    if (i <= 100000){
+        bonus = i * 0.1;
+    }
+    else if (i <= 200000){
+        bonus = (i - 100000) * 0.075 + 10000;
+    }
+    else if (i <= 400000){
+        bonus = (i - 200000) * 0.05 + 17500;
+    }
+    else if (i <= 600000){
+        bonus = (i - 400000) * 0.03 + 27500;
+    }
+    else if (i <= 1000000){
+        bonus = (i - 600000) * 0.015 + 33500;
+    }
+    else {
+        bonus = (i - 1000000) * 0.01 + 39500;
+    }
+
+    printf("奖金分成是%f\n", bonus);
+
+    return 0;
+}
