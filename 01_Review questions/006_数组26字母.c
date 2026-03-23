@@ -6,6 +6,11 @@ int main() {
     
 
     printf("%s\n", alphabet);
+
+//或者逐个字符打印
+//for(int i = 0; i < 26; i++) {
+//    printf("%c", alphabet[i]);
     
     return 0;
 }
+
